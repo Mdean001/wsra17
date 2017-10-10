@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="tipo_contenido" content="text/html;" http-equiv="content-type" charset="utf-8">
+	<title>AddQuestion</title>
+    <link rel='stylesheet' type='text/css' href='stylesPWS/style.css' />
+	<link rel='stylesheet' 
+		   type='text/css' 
+		   media='only screen and (min-width: 530px) and (min-device-width: 481px)'
+		   href='stylesPWS/wide.css' />
+	<link rel='stylesheet' 
+		   type='text/css' 
+		   media='only screen and (max-width: 480px)'
+		   href='stylesPWS/smartphone.css' />
+	<script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#galdeForm").submit(function(){
+				if( $("#eposta").val().length > 0 && $("#galdera").val().length > 0 && $("#eranZuzen").val().length > 0 &&  $("#eranOker1").val().length > 0 && 
+					$("#eranOker2").val().length > 0 && $("#eranOker3").val().length > 0 && $("#zailtasun").val().length > 0 && $("#gaia").val().length > 0 ){
+						
+						if( $("#galdera").val().length >= "10" ){
+						
+							var patZail = /^([1-5])$/
+							
+							if( patZail.test( $("#zailtasun").val() ) ){
+								
+								var patPosta = /^([a-z]{2,})([0-9]{3})@ikasle\.ehu\.(eus|es)$/
+								
+								if(patPosta.test( $("#eposta").val() ) ){
+									return true
+								}else{
+									alert("Sartu duzun eposta ez da egokia!!!")
+									return false
+								}
+							}else{
+								alert("Zailtasunaren balioa, zenbaki osokoa eta, 1 eta 5 artekoa, biak barne!!!")
+								return false
+							}
+						}else{
+							alert("Galderaren luzera gutxienez 10ekoa izan behar da!!!")
+							return false
+						}
+				}else{
+					alert("Derrigorrezko eremuren bat hutsik utzi duzu!!!")
+					return false
+				}
+			})
+			$("#berrezarri").click(function(){
+				if( $("#irudia") != null ){
+					$("#irudia").hide()
+					$("#irudia").remove()
+				}
+			})
+		})
+	</script>
+  </head>
+  <body>
+	<br/>
+	<header class='main' id='h1'>
+		<h2 style="color:black">Add question to the quiz</h2>
+	</header>
+	<br/>
+	<h4>&#40;&#42;&#41; duten eremuak derrigorrezkoak dira</h4>
+	<form id="galdeForm" name="galdeForm" action="proba.php">
+		<br/>
+		Eposta &#40;&#42;&#41;: <input type="text" id="eposta" name="eposta" size="35"/>
+		<br/>
+		<br/>
+		Galderaren testua &#40;&#42;&#41;: <input type="text" id="galdera" name="galdera" size="50"/>
+		<br/>
+		<br/>
+		Erantzun zuzena &#40;&#42;&#41;: <input type="text" id="eranZuzen" name="eranZuzen"/>
+		<br/>
+		<br/>
+		Erantzun okerra 1 &#40;&#42;&#41;: <input type="text" id="eranOker1" name="eranOker1"/>
+		<br/>
+		<br/>
+		Erantzun okerra 2 &#40;&#42;&#41;: <input type="text" id="eranOker2" name="eranOker2"/>
+		<br/>
+		<br/>
+		Erantzun okerra 3 &#40;&#42;&#41;: <input type="text" id="eranOker3" name="eranOker3"/>
+		<br/>
+		<br/>
+		Galderaren zailtasuna &#40;1 eta 5 artekoa&#41; &#40;&#42;&#41;: <input type="text" id="zailtasun" name="zailtasun"/>
+		<br/>
+		<br/>
+		Galderaren gai-arloa &#40;&#42;&#41;: <input type="text" id="gaia" name="gaia"/>
+		<br/>
+		<br/>
+		Irudia: <input type="text" id="irudiIzen" name="irudiIzen" size="50"/> <input type="button" id="gehituIrudia" name="gehituIrudia" value="Irudia gehitu" onClick="irudiaGehitu()"/>
+		<br/>
+		<script type="text/javascript">
+			function irudiaGehitu(){
+				var izen = document.getElementById("irudiIzen").value
+				var lag = document.getElementById("irudia")
+				if( lag != null ){
+					lag.style.display = 'hide'
+					lag.parentNode.removeChild(lag)
+				}
+				if( izen.length > 0 ){
+					var ir = document.createElement("img")
+					ir.src = izen
+					ir.height = "75"
+					ir.width = "75"
+					ir.id = "irudia"
+					
+					var muga = document.getElementById("bidali")
+					var fm = document.getElementById("galdeForm")
+					fm.insertBefore(ir,muga)
+					ir.style.display = 'block'
+				}
+			}
+		</script>
+		<br/>
+		<input type="submit" id="bidali" name="bidali" value="Bidali"/>
+		<input type="reset" id="berrezarri" name="berrezarri" value="Berrezarri"/>
+  </form>
+  <br/>
+  <a href="layout.html"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTag2-ooi3cc_xTF209IxsqLEmUiUZiY5V1XseIMhjMUPHeRo39Aw" id="atzera" name="atzera" height="45" width="45" /></a>
+</body>
+</html>
