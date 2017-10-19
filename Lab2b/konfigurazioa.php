@@ -7,8 +7,8 @@ if($lokal==0){
 	$dbname = "quiz";
 }else{
 	$servername = "localhost";
-	$username = "id2926954_wst18";
-	$password = "wst18";
-	$dbname = "id2926954_quiz";
+	$username = "id2954107_wst18";
+	$password = "";
+	$dbname = "id2954107_quiz";
 }	
 ?>
