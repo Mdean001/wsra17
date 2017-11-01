@@ -123,6 +123,6 @@
   <br/>
   <img src="" id="irudia" style="display: none;"/>
   <br/>
-  <a href="layoutR.php?eposta=<?php echo "$_GET[eposta]";?>&&irudia<?php echo "$_GET[irudia]";?>"> Atzera </a>
+  <a href="layoutR.php?eposta=<?php echo "$_GET[eposta]";?>"> Atzera </a>
 </body>
 </html>
