@@ -16,6 +16,11 @@
 	<script type="text/javascript">
 		$(document).ready(function(){
 			$("#galdeForm").submit(function(){
+			return true;
+			})
+		})
+			/*
+				console.log("Sartu da")
 				if( $("#eposta").val().length > 0 && $("#galdera").val().length > 0 && $("#eranZuzen").val().length > 0 &&  $("#eranOker1").val().length > 0 && 
 					$("#eranOker2").val().length > 0 && $("#eranOker3").val().length > 0 && $("#zailtasun").val().length > 0 && $("#gaia").val().length > 0 ){
 						
@@ -46,7 +51,7 @@
 					return false
 				}
 			})
-		})
+		})*/
 	</script>
   </head>
   <body>
@@ -55,11 +60,12 @@
 		<h2 style="color:black">Add question to the quiz</h2>
 	</header>
 	<br/>
+	Eposta: <span> <?php echo "$_GET[eposta]";?> </span>
+	<br/>
+	<br/>
+	
 	<h4>&#40;&#42;&#41; duten eremuak derrigorrezkoak dira</h4>
-	<form id="galdeForm" name="galdeForm" action="addQuestionWithImage.php" method="POST">
-		<br/>
-		Eposta &#40;&#42;&#41;: <input type="text" id="eposta" name="eposta" size="35"/>
-		<br/>
+	<form id="galdeForm" name="galdeForm" action="addQuestionWithImage.php?eposta=<?php echo "$_GET[eposta]";?>" method="POST" enctype="multipart/form-data">
 		<br/>
 		Galderaren testua &#40;&#42;&#41;: <input type="text" id="galdera" name="galdera" size="50"/>
 		<br/>
@@ -83,9 +89,11 @@
 		<br/>
 		<br/>
 		Irudia : <input type="file" id="gehituIrudia" name="gehituIrudia" onchange="irudiaGehitu()"/>
+		
 		<br/>
 		<script type="text/javascript">
 			function irudiaGehitu(){
+				
 				var preview = document.querySelector('img');
 				var file = document.querySelector('input[type=file]').files[0];
 				var reader = new FileReader();
@@ -115,6 +123,6 @@
   <br/>
   <img src="" id="irudia" style="display: none;"/>
   <br/>
-  <a href="layout.html"> Atzera </a>
+  <a href="layoutR.php?eposta=<?php echo "$_GET[eposta]";?>&&irudia<?php echo "$_GET[irudia]";?>"> Atzera </a>
 </body>
 </html>

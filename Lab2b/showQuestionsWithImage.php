@@ -21,10 +21,10 @@ while ( $galdera = $galderak->fetch_object()) {
 		echo '<tr> <td> '.$galdera->ID.' </td> <td> '.$galdera->Eposta.' </td> <td> '.$galdera->Galdera.' </td> <td> '.$galdera->ErantzunZuzena.'</td>';
         echo '<td> '.$galdera->ErantzunOkerra1.' </td> <td> '.$galdera->ErantzunOkerra2.' </td> <td> '.$galdera->ErantzunOkerra3.' </td>';
 		echo '<td> '.$galdera->Zailtasuna.' </td> <td> '.$galdera->GaiArloa.' </td>';
-		echo '<td> '.'<img src="data : image/jpeg;base64,'.base64_encode($galdera->Irudia).'" width="200" heigth="150" />'.' </td> </tr>';
+		echo '<td> '.'<img src="data:image/jpeg;base64,'.base64_encode($galdera->Irudia).'" width="200" heigth="150" />'.' </td> </tr>';
 }	
 echo '</table>';
-echo "<a href='layout.html'> Itzuli orri nagusira </a>";
+echo "<a href='layoutR.html'> Itzuli orri nagusira </a>";
 $galderak->close();
 $connection->close();
 ?> 

@@ -29,13 +29,11 @@ $zailtasun = $_POST['zailtasun'];
 
 $gaia = $_POST['gaia'];
 
-$irudia = addslashes (file_get_contents($_FILES['gehituIrudia']['tmp_name']));
-
-$sql = "INSERT INTO questions(Eposta, Galdera, ErantzunZuzena, ErantzunOkerra1, ErantzunOkerra2, ErantzunOkerra3, Zailtasuna, GaiArloa, Irudia) VALUES ('$eposta','$galdera','$eranZuzen','$eranOker1','$eranOker2','$eranOker3','$zailtasun','$gaia', '$irudia')";
+$sql = "INSERT INTO questions(Eposta, Galdera, ErantzunZuzena, ErantzunOkerra1, ErantzunOkerra2, ErantzunOkerra3, Zailtasuna, GaiArloa) VALUES ('$eposta','$galdera','$eranZuzen','$eranOker1','$eranOker2','$eranOker3','$zailtasun','$gaia')";
 
 if ($connection->query($sql) === TRUE) {
     echo "Datu-basean galdera zuzen txertatu da <br/>";
-	echo "<a href='showQuestionsWithImage.php'> Ikusi datu-baseko galderak </a><br/>";
+	echo "<a href='showQuestions.php'> Ikusi datu-baseko galderak </a><br/>";
 	echo "<a href='addQuestion.html'> Beste galdera bat txertatu </a><br/>";
 } else {
     //echo "Error: " . $sql . "<br>" . $connection->error;
@@ -45,5 +43,4 @@ if ($connection->query($sql) === TRUE) {
 }
 
 $connection->close();
-
 ?> 

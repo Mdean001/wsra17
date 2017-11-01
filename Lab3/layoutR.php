@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta name="tipo_contenido" content="text/html;" http-equiv="content-type" charset="utf-8">
@@ -16,21 +16,21 @@
   <body>
   <div id='page-wrap'>
 	<header class='main' id='h1'>
-      <span class="right"><a href="/login">LogIn</a> </span>
-      <span class="right" style="display:none;"><a href="/logout">LogOut</a> </span>
-	<h2>Quiz: crazy questions</h2>
+		<h2>Quiz: crazy questions</h2>
     </header>
 	<nav class='main' id='n1' role='navigation'>
-		<span><a href='layout.html'>Home</a></span>
-		<span><a href='/quizzes'>Quizzes</a></span>
-		<span><a href='signUp.php'>Sign Up</a></span>
-		<span><a href='logIn.php'>Log In </a></span>
-		<span><a href='credits.html'>Credits</a></span>
+		<span><a href='layoutR.php?eposta=<?php echo "$_GET[eposta]";?>'>Home</a></span>
+		<!--<span><a href='/quizzes'>Quizzes</a></span>-->
+		<span><a href='addQuestionFormularioa.php?eposta=<?php echo "$_GET[eposta]";?>'>addQuestion</a></span>
+		<span><a href='showQuestionsWithImage.php?eposta=<?php echo "$_GET[eposta]";?>'> showQuestionsWithImage</a></span>
+		<span><a href='showQuestions.php?eposta=<?php echo "$_GET[eposta]";?>'> showQuestions</a></span>
+		<span><a href='logOut.php'> logOut</a></span>
+		<!--<span><a href='credits.html'>Credits</a></span>-->
 	</nav>
     <section class="main" id="s1">
-    
 	
 	<div>
+
 	Quizzes and credits will be displayed in this spot in future laboratories ...
 	</div>
     </section>
