@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="showQuestions.xsl"?>
+<assessmentItems>
+	<assessmentItem complexity="3" subject="mikologia">
+		<itemBody> 
+			<p>Zein Amanita da jangarria?</p>
+		</itemBody>
+		<correctResponse>
+			<value>Caesarea</value>
+		</correctResponse>
+		<incorrectResponses>
+			<value>Phalloides</value>
+			<value>Muscaria</value>
+			<value>Virosa</value>
+		</incorrectResponses>
+	</assessmentItem>
+	<assessmentItem complexity="3" subject="mikologia">
+		<itemBody> 
+			<p>Tripakiek zer dute kapela azpian?</p>
+		</itemBody>
+		<correctResponse>
+			<value>Eztenak</value>
+		</correctResponse>
+		<incorrectResponses>
+			<value>Filamenduak</value>
+			<value>Himenioa</value>
+			<value>Hodiak</value>
+		</incorrectResponses>
+	</assessmentItem>
+	<assessmentItem complexity="5" subject="mikologia">
+		<itemBody>
+			<p>Eranztuna du</p>
+		</itemBody>
+		<correctResponse>
+			<value>Galanpernak</value>
+		</correctResponse>
+		<incorrectResponses>
+			<value>Gibel urdinak</value>
+			<value>Esnegorriak</value>
+			<value>Errotariak</value>
+		</incorrectResponses>
+	</assessmentItem>
+<assessmentItem complexity="2" subject="Hilabeteak"><itemBody><p>Zenbat hilabete urtean?</p></itemBody><correctResponse><value>12</value></correctResponse><incorrectResponses><value>5</value><value>8</value><value>1</value></incorrectResponses></assessmentItem><assessmentItem complexity="1" subject="Orduak"><itemBody><p>Zenbat ordu egunak?</p></itemBody><correctResponse><value>24</value></correctResponse><incorrectResponses><value>4</value><value>56</value><value>12</value></incorrectResponses></assessmentItem><assessmentItem complexity="2" subject="Urtaroak"><itemBody><p>Zenbat urtaro daude?</p></itemBody><correctResponse><value>4</value></correctResponse><incorrectResponses><value>7</value><value>1</value><value>10</value></incorrectResponses></assessmentItem></assessmentItems>

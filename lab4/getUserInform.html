@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta name="tipo_contenido" content="text/html;" http-equiv="content-type" charset="utf-8">
+	<title> Sartu korreo bat bere datuak ikusteko. </title>
+    <link rel='stylesheet' type='text/css' href='stylesPWS/style.css' />
+	<link rel='stylesheet' 
+		   type='text/css' 
+		   media='only screen and (min-width: 530px) and (min-device-width: 481px)'
+		   href='stylesPWS/wide.css' />
+	<link rel='stylesheet' 
+		   type='text/css' 
+		   media='only screen and (max-width: 480px)'
+		   href='stylesPWS/smartphone.css' />
+	<script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#erregistratuForm").submit(function(){
+				if($("#eposta").val().length >0){
+					var patPosta = /^([a-z]{2,})([0-9]{3})@ikasle\.ehu\.(eus|es)$/
+					if(patPosta.test( $("#eposta").val() )){
+						return true
+					}
+				}
+			})
+		})		
+	</script>
+
+</head>
+<body>
+<form id="datuak" name="datuak" action="getUserInform.html" method="POST"> 
+	Ikaslearen eposta:<input type="text" name="eposta" id="eposta"/><br/>
+	Ikaslearen telefonoa: <output type="text" name="telefonoa" id="telefonoa"/><br/>
+	Ikaslearen izena: <output type="text" name="izena" id="izena"/><br/>
+	Ikaslearen abizenak: <output type="text" name="abizena" id="abizena"/><br/>
+	<input type="submit" name="lortu" id="lortu" value="Lortu"/>
+</form><br/>
+<br/><br/>
+<input type="button" id="bilatu" value="Bilatu"/>
+</body>
+</html>
+
+<?php 
+
+if(isset($_POST['eposta'])){
+
+
+
+?>
