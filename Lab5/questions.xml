@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<assessmentItems>
+	<assessmentItem complexity="3" subject="mikologia">
+		<itemBody> 
+			<p>Zein Amanita da jangarria?</p>
+		</itemBody>
+		<correctResponse>
+			<value>Caesarea</value>
+		</correctResponse>
+		<incorrectResponses>
+			<value>Phalloides</value>
+			<value>Muscaria</value>
+			<value>Virosa</value>
+		</incorrectResponses>
+	</assessmentItem>
+	<assessmentItem complexity="3" subject="mikologia">
+		<itemBody> 
+			<p>Tripakiek zer dute kapela azpian?</p>
+		</itemBody>
+		<correctResponse>
+			<value>Eztenak</value>
+		</correctResponse>
+		<incorrectResponses>
+			<value>Filamenduak</value>
+			<value>Himenioa</value>
+			<value>Hodiak</value>
+		</incorrectResponses>
+	</assessmentItem>
+	<assessmentItem complexity="5" subject="mikologia">
+		<itemBody>
+			<p>Eranztuna du</p>
+		</itemBody>
+		<correctResponse>
+			<value>Galanpernak</value>
+		</correctResponse>
+		<incorrectResponses>
+			<value>Gibel urdinak</value>
+			<value>Esnegorriak</value>
+			<value>Errotariak</value>
+		</incorrectResponses>
+	</assessmentItem>
+<assessmentItem complexity="2" subject="Hilabeteak"><itemBody><p>Zenbat hilabete urtean?</p></itemBody><correctResponse><value>12</value></correctResponse><incorrectResponses><value>5</value><value>8</value><value>1</value></incorrectResponses></assessmentItem><assessmentItem complexity="1" subject="Orduak"><itemBody><p>Zenbat ordu egunak?</p></itemBody><correctResponse><value>24</value></correctResponse><incorrectResponses><value>4</value><value>56</value><value>12</value></incorrectResponses></assessmentItem><assessmentItem complexity="2" subject="Urtaroak"><itemBody><p>Zenbat urtaro daude?</p></itemBody><correctResponse><value>4</value></correctResponse><incorrectResponses><value>7</value><value>1</value><value>10</value></incorrectResponses></assessmentItem><assessmentItem complexity="1" subject="Eguzkia"><itemBody><p>Eguzkia zein koloretakoa ikusten dugu?</p></itemBody><correctResponse><value>Horia</value></correctResponse><incorrectResponses><value>Urdina</value><value>Beltza</value><value>Berdea</value></incorrectResponses></assessmentItem><assessmentItem complexity="4" subject="kvkhjvjvhvjh"><itemBody><p>iaiuaiaiugaggaiuaguagiu</p></itemBody><correctResponse><value>iagiuagiaugaigau</value></correctResponse><incorrectResponses><value>iagiuaaiugaiug</value><value>iuguigiu</value><value>igiug</value></incorrectResponses></assessmentItem><assessmentItem complexity="4" subject="jkbkjbkjbkj"><itemBody><p>igiygigiuiugiugiugiu</p></itemBody><correctResponse><value>iugiugiu</value></correctResponse><incorrectResponses><value>iugiu</value><value>giugi</value><value>ugiug</value></incorrectResponses></assessmentItem><assessmentItem complexity="4" subject="jkbkjbkjbkj"><itemBody><p>igiygigiuiugiugiugiu</p></itemBody><correctResponse><value>iugiugiu</value></correctResponse><incorrectResponses><value>iugiu</value><value>giugi</value><value>ugiug</value></incorrectResponses></assessmentItem><assessmentItem complexity="4" subject="jkbkjbkjbkj"><itemBody><p>igiygigiuiugiugiugiu</p></itemBody><correctResponse><value>iugiugiu</value></correctResponse><incorrectResponses><value>iugiu</value><value>giugi</value><value>ugiug</value></incorrectResponses></assessmentItem><assessmentItem complexity="4" subject="jkbkjbkjbkj"><itemBody><p>igiygigiuiugiugiugiu</p></itemBody><correctResponse><value>iugiugiu</value></correctResponse><incorrectResponses><value>iugiu</value><value>giugi</value><value>ugiug</value></incorrectResponses></assessmentItem><assessmentItem complexity="4" subject="jkbkjbkjbkj"><itemBody><p>igiygigiuiugiugiugiu</p></itemBody><correctResponse><value>iugiugiu</value></correctResponse><incorrectResponses><value>iugiu</value><value>giugi</value><value>ugiug</value></incorrectResponses></assessmentItem><assessmentItem complexity="4" subject="jkbkjbkjbkj"><itemBody><p>igiygigiuiugiugiugiu</p></itemBody><correctResponse><value>iugiugiu</value></correctResponse><incorrectResponses><value>iugiu</value><value>giugi</value><value>ugiug</value></incorrectResponses></assessmentItem><assessmentItem complexity="4" subject="jkbkjbkjbkj"><itemBody><p>igiygigiuiugiugiugiu</p></itemBody><correctResponse><value>iugiugiu</value></correctResponse><incorrectResponses><value>iugiu</value><value>giugi</value><value>ugiug</value></incorrectResponses></assessmentItem><assessmentItem complexity="4" subject="iigiuaiguauigiga"><itemBody><p>agiagaiugiauagiug</p></itemBody><correctResponse><value>iugiu</value></correctResponse><incorrectResponses><value>ugiug</value><value>iugui</value><value>giu</value></incorrectResponses></assessmentItem><assessmentItem complexity="4" subject="Perretxikoak"><itemBody><p>Zein perretxiko da urdina?</p></itemBody><correctResponse><value>Gibelurdina</value></correctResponse><incorrectResponses><value>Onddoa</value><value>Xixa</value><value>Zuhaitza</value></incorrectResponses></assessmentItem><assessmentItem complexity="1" subject="Eguzkia"><itemBody><p>Eguzkia zein koloretakoa ikusten dugu?</p></itemBody><correctResponse><value>Horia</value></correctResponse><incorrectResponses><value>Urdina</value><value>Beltza</value><value>Berdea</value></incorrectResponses></assessmentItem><assessmentItem complexity="2" subject="Egunak"><itemBody><p>Zenbat egun asteak?</p></itemBody><correctResponse><value>7</value></correctResponse><incorrectResponses><value>8</value><value>12</value><value>3</value></incorrectResponses></assessmentItem><assessmentItem complexity="4" subject="Minutu"><itemBody><p>Zenbat minutu ordu batean?</p></itemBody><correctResponse><value>60</value></correctResponse><incorrectResponses><value>120</value><value>30</value><value>45</value></incorrectResponses></assessmentItem><assessmentItem complexity="1" subject="Hilabeteak"><itemBody><p>Zenbat hilabete urtean?</p></itemBody><correctResponse><value>12</value></correctResponse><incorrectResponses><value>20</value><value>10</value><value>6</value></incorrectResponses></assessmentItem><assessmentItem complexity="2" subject="Orduak"><itemBody><p>Zenbat ordu egunak?</p></itemBody><correctResponse><value>24</value></correctResponse><incorrectResponses><value>45</value><value>4</value><value>60</value></incorrectResponses></assessmentItem><assessmentItem complexity="2" subject="Zatiketa"><itemBody><p>Zenbat da 4/2?</p></itemBody><correctResponse><value>2</value></correctResponse><incorrectResponses><value>4</value><value>1</value><value>3</value></incorrectResponses></assessmentItem><assessmentItem complexity="1" subject="Zatiketa"><itemBody><p>Zenbat da 6/2?</p></itemBody><correctResponse><value>3</value></correctResponse><incorrectResponses><value>4</value><value>5</value><value>2</value></incorrectResponses></assessmentItem><assessmentItem complexity="1" subject="Batuketa"><itemBody><p>Zenbat da 4 2?</p></itemBody><correctResponse><value>6</value></correctResponse><incorrectResponses><value>4</value><value>2</value><value>7</value></incorrectResponses></assessmentItem><assessmentItem complexity="3" subject="Biderketa"><itemBody><p>Zenbat da 2*2?</p></itemBody><correctResponse><value>4</value></correctResponse><incorrectResponses><value>5</value><value>6</value><value>2</value></incorrectResponses></assessmentItem></assessmentItems>
