@@ -152,6 +152,11 @@ if(isset($_POST['eposta'])){
 	if ($connection->query($sql) === TRUE) {
 		//echo "<script> alert('Ondo erregistratu zara.') </script>";
 		//header('location: layoutR.html');
+		
+		$xml = simplexml_load_file('counter.xml');
+		$xml->children()->itemBody->p = $xml->children()->itemBody->p + 1;
+		$xml->asXML('counter.xml');
+		
 		echo '<script language="javascript" type="text/javascript"> alert("Erregistroa zuzen burutu da.Ongi etorri!!!"); location.href="layoutR.php?eposta='.$eposta.' "</script>';
 	}else{
 		/*echo "Error: " . $sql . "<br>" . $connection->error;

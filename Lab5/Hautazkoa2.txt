@@ -1,0 +1,26 @@
+
+Lehenik eta behin, formularioan hautazkoa 2-ri dagokion emaitza idazteko div etiketa bat jarri dugu id moduan 
+erabiltzaileKop duena. Ondoren, javascript motako script baten barruan XMLHttpRequest motako objektu bat
+sortu dugu xhro4 izenekoa.
+
+Baliabidea martxan jartzeko, handlingQuizes.php-ri dagokion orria kargatzean (window.onload), erabiltzaileKopurua 
+izeneko metodoari dei egiten diogu eta ondoren, setInterval funtzioari dei egiten diogu erabiltzaileKopurua funtzioa 
+exekuta dezan 10 segundoro (10.000 milisegundo).
+
+erabiltzaileKopurua funtzioari dagokionean, AJAX bidez GET eskaera bat egiten dugu kautoKopLortu.php fitxategira, 
+xhro4 objektuaren bitartez.
+
+kautoKopLortu.php fitxategian, SimpleXML erabilita counter.xml izeneko fitxategia irekitzen edo kargatzen dugu.
+Bertan, momentu horretan aplikazioan kautotuta edo logeatuta dagoen erabiltzaile kopurua gordetzen da. Balio hori 
+lortzeko p elementuan dagoen balioa lortu behar dugu eta horretarako, $xml->children()->itemBody->p sententzia erabiltzen 
+dugu. Azkenik, echo bat burutzen dugu p elementu horretan lortutako balioarekin.
+
+Bestalde, kautotutako erabiltzaile kopurua mantentzeko logIn.php, logOut.php eta signUp.php fitxategiak aldatu ditugu.
+logIn.php eta signUp.php fitxategietan counter.xml fitxategiko p elementuaren balioa balio batean handitzen dugu eta
+logOut.php fitxategian aldiz, counter.xml fitxategiko p elementuaren balioa balio batean txikitzen dugu.
+
+Bukatzeko, handlingQuizes.php fitxategian, AJAX erabilita xhro4 objektuaren bitartez eginiko eskaeraren emaitza 
+prozesatu behar da. xhro4 objektu horren egoera aldatzen denean, funtzio anonimo bat exekutatzen da. Bertan, 
+objektuaren egoera-balioa 4koa bada (xhro4.readyState==4) eta eskaera zuzen joan bada (xhro4.status==200), xhro4
+objektuaren bitartez testu erantzuna lortzen dugu eta dokumentuaren hasieran aipatutako div-ean erantzun hori 
+idazten dugu testu gehigarri batekin batera.

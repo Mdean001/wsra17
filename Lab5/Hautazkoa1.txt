@@ -1,0 +1,25 @@
+
+Lehenik eta behin, formularioan hautazkoa 1-i dagokion emaitza idazteko div etiketa bat jarri dugu id moduan 
+galderaKopuruaTestua duena. Ondoren, javascript motako script baten barruan XMLHttpRequest motako objektu bat
+sortu dugu xhro3 izenekoa.
+
+Baliabidea martxan jartzeko, handlingQuizes.php-ri dagokion orria kargatzean (window.onload), galderaKopurua 
+izeneko metodoari dei egiten diogu eta ondoren, setInterval funtzioari dei egiten diogu galderaKopurua funtzioa 
+exekuta dezan 20 segundoro (20.000 milisegundo).
+
+galderaKopurua funtzioari dagokionean, URL bidez pasa diguten eposta lortzen dugu lehenik GET superglobalari esker 
+eta azkenik, AJAX bidez GET eskaera bat egiten dugu galderaKopurua.php fitxategira, eskaeran atributu bezala eposta 
+pasatuz, xhro3 objektuaren bitartez.
+
+galderaKopurua.php fitxategian, lehenik eta behin datu-basera konekxio bat zabaltzen dugu eta GET eskaeran pasatutako 
+eposta atributuaren balioa lortzen dugu. Ondoren, bi kontsulta egiten ditugu datu-basean: lehenengoan, questions 
+taulako guztia eskuratzen dugu eta bigarrenean, questions taulako eposta eremuan eskaeran bidalitako eposta duten 
+galdera guztiak lortzen ditugu. Hori egin ostean, kontsulta bakoitzaren emaitzaren lerro kopurua lortzen dugu num_rows 
+propietateari esker. Bukatzeko, echo bat burutzen dugu emaitzen lerro kopuruarekin eta emaitzak askatu eta konekxioa
+ixten dugu.
+
+Bukatzeko, handlingQuizes.php fitxategian, AJAX erabilita xhro3 objektuaren bitartez eginiko eskaeraren emaitza 
+prozesatu behar da. xhro3 objektu horren egoera aldatzen denean, funtzio anonimo bat exekutatzen da. Bertan, 
+objektuaren egoera-balioa 4koa bada (xhro3.readyState==4) eta eskaera zuzen joan bada (xhro3.status==200), xhro3
+objektuaren bitartez testu erantzuna lortzen dugu eta dokumentuaren hasieran aipatutako div-ean erantzun hori 
+idazten dugu testu gehigarri batekin batera.
