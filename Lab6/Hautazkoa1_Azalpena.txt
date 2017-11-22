@@ -1,0 +1,21 @@
+Hautazkoa 1 funtzionalitatea probatu nahi badugu, layoutR.php orrian getQuestionByID
+linkean klikatu beharko dugu. Ondoren agertuko zaigun orrian, GetQuestionByID tituloa 
+daukana, kutxa bat eta botoi bat aurkituko ditugu. Kutxan zenbaki bat sartu beharko dugu,
+positiboa eta osoa izango dena, eta bilatu nahi dugun galderaren ID zenbakia izango dena.
+Ondoren bilatu botoia sakatu beharko dugu, ID hori duen galderaren galdera testua, erantzunZuzena 
+eta zailtasuna eskuratzeko.
+
+Bilatu botoia sakatzean AJAX-en bidez eta GET metodoa erabiliz getQuestionBEZEROA.php-ari pasako dio eskaera,
+parametro bezala eskatutako galderaren identifikadorea pasata. GetQuestionBEZEROA-k ondoren identifikazioa jaso egiten du. Geroago
+nusoap bezero bat sortzen du web-zerbitzua kokatuta dagoen helbidean ($soapclient) eta bezero horrekin dei bat egiten du (call) 
+getQuestion metodoa erabiltzeko edo deitzeko eta sarrera parametro bezala identifikadorea pasatzen da ( array('x'=>$identifikazioa) ).
+Bukatzeko dei horren erantzuna, identifikazio hori duen galderaren datuak, itzuliko ditu. Itzulitako datu horiek getQuestionFormulario.php
+orrira iritsiko dira eta responseText funtzioaren bitartez lortuko ditugu. Behin datuak lortuta pantailaratu egingo dira.
+
+Datu guztiak lortzeko getQuestionWZ.php erabiliko da. Bertan soap zerbitzari bat sortuko da web-zerbitzua kokatuta dagoen helbidean (fitxategi honetan bertan) eta
+funtzio bat erregistratuko da (getQuestion) bi parametro izango dituena, lehenengoa bilatu behar den identifikadorea (sarrera, x, int motakoa) izango dena eta bigarrena itzuli behar dituen datuak 
+izango dituena (e, string-a). getQuestion funtzioan, datuak lortzeko datu basearekin konexioa ireki behar da, eta bertan identifikadore hori duen galdera bilatu SELECT bat
+eginez. Galdera aurkitzen badu (lerro kopurua handiago zero bada), galderaren testua, erantzun zuzena eta zailtasuna itzuliko ditu, bestela bi string huts (galderaren testu eta erantzun zuzenari dagozkienak)
+eta 0 zailtasunean itzuliko ditu. Bukaeran, web-zerbitzua eskaerak jasotzeko zain jartzen dugu.
+
+
