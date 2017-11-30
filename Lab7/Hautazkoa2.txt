@@ -1,0 +1,14 @@
+Erabiltzaileak pasahitza ahaztu badu, LogIn-eko orrian esteka bat izango du bere pasahitza berreskuratzeko. Ondoren erabiltzaileak bere eposta eta eposta horri dagokion nick-a sartu beharko ditu, bere kontua dela egiaztatzeko. Biak bat egiten baldin badute, beste orri batean pasahitz berria jartzeko aukera izango du, eta logIn-era berbideratua izango da. Bestalde, nick-a eta eposta ez badatoz bat ezin izango du kontu horri dagokion pasahitza aldatu.
+
+Hasiera batean berreskurapena email bidez egiten saiatu ginen, baina nahiz eta gure kodeak ondo burutu bidalketa webhost-ek ez zuen mezurik bidaltzen eta aurrean azaldutako modua erabiltzea aukeratu genuen. Mezuko pasahitza bakarrik sortzen zen, erabiltzaileak pasahitz berria sartu behar izan gabe.
+
+$newPassword = substr( md5(microtime()), 1, 8);
+					
+					$newPassEncrypt = crypt($newPassword, "wsPasahitzaKodetuta");
+$sqlAldatu = "UPDATE users SET Pasahitza ='$newPassEncrypt' WHERE Eposta= '$trimEposta'"; 
+					$egokiSartuta = $connection->query($sqlAldatu);
+					if ($egokiSartuta === TRUE) {
+						$goiburua  = 'MIME-Version: 1.0' . "\r\n";
+						$goiburua .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+						$goiburua .= 'From: QuizzesApp <no_contestar@000webhostapp.com>' . "\r\n";
+						$bool= mail($trimEposta,'New password',$newPassword, $goiburua);
