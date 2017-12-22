@@ -1,1 +1,63 @@
 
+WEB SISTEMAK: QUIZ APLIKAZIOA
+
+
+Egileak:
+Hodei Iraola
+Mikel Dean
+
+Euskal Herriko Unibertsitatea
+Informatika Fakultatea
+2017ko abenduaren 22-a
+
+
+Edukia
+Sarrera	3
+Aplikazioa ikusi eta probatzeko link-ak	3
+Inplementatutako funtzionalitateak eta behar izandako denbora	3
+Egindako bideoen estekak	4
+ 
+Sarrera
+ 
+Dokumentu honetan Web Sistemak irakasgaian landutako Quiz aplikazioaren azken praktikarekin lotutako informazioa dago, 
+garatutako funtzionalitateak, erabilitako orduak, hauek probatzeko link-ak etab. 
+ 
+Aplikazioa ikusi eta probatzeko link-ak
+ 
+Bi link ditugu atal honetan, bat GitHub biltegikoa eta bestea 000webhost-ekoa. Lehenengoan aplikazioaren kodea ikusi dezakegu,
+eta bigarrengoan aplikazioa probatu dezakegu, inplementatuta dituen funtzionalitateak nola funtzionatzen duten ikusteko.
+ 
+GitHub biltegiko URL-a: : https://github.com/Mdean001/wsra17/tree/master/Azken%20praktika
+ 
+000webhost-eko helbidea: http://hodei818.000webhostapp.com/AzkenPraktika/layout.php
+ 
+Inplementatutako funtzionalitateak eta behar izandako denbora
+ 
+Azken praktika honetan bi funtzionalitate berri inplementatu ditugu, galdera ezabatu, oneplayquizzes eta top10quizzes.
+Lehenengo funtzionalitatea bakarrik irakaslearen kontuarekin dago erabilgarri, bakarrik irakasleak daukalako aukera galderetan aldaketak egiteko. 
+Bigarrengoa, berriz, erabiltzaile anonimoek bakarrik erabili dezakete.
+ 
+Galdera bat ezabatzeko behin irakasle bezala logIn eginda removeQuestion aukeran sakatu beharko dugu. 
+Ondoren, borratu nahi den galderaren Id-a sarrtu beharko dugu. 
+Ondoren Ajax bidez datu basetik galdera borratuko da eta taula freskatu egingo da. Funtzionalitate hau inplementatzeko 20 minutu erabili ditugu.
+ 
+Oneplayquizzes edo galderak erantzun inplementatzeko galdera bat ezarri dugu funtzionalitatearen hasieran eta 
+galdera hori zuzentzean eta hurrengoa ematean jolasten jarraitzeko Ajax bidez hurrengo galdera lortzen da datu basetik.
+Nahiz eta hoberena galderak ausaz aukeratzea den, ezin izan dugu horrela inplementatu, eta beraz, galderak 
+ 
+orden berdinean erantzungo dira beti. Galderak zuzentzean momentuan azalduko zaigu zuzen edo oker erantzun dugun,
+eta ez da posible galdera guztiak erantzun baino lehen jolasteari uztea. 
+Funtzionalitate hau inplementatzeko 2 ordu eta 30 minutu erabili ditugu.
+ 
+Top10quizzes funtzionalitatean erantzun zuzen gehien dituzten 10 jokalariak agertzen dira. 
+Horretarako datu basean taula berri bat sortu dugu, eta bertan jokalari guztien nick-a eta zuzen erantzundako galdera kopurua 
+gordetzen da. Honela lehen hamarrak lortu ditzakegu eta ondoren pantailaratu jokalariek erronkaren bat izan dezaten. 
+Funtzionalitate hau inplementatzeko 35 minutu behar izan ditugu.
+
+Egindako bideoen estekak
+	
+	Bideo bat grabatu dugu aurkitu dugun segurtasun arazo bat aurkitu genuelako berdinen arteko ebaluazioa egiten ari ginela. 
+  Bideoan argi azaltzen da zein den aurkitutako arazoa eta zerk eragiten duen arazo hori.
+ 
+	Bideoaren esteka: https://dean-mikel888.wistia.com/medias/wcm6sxg28b
+
